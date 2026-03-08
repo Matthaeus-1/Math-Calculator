@@ -1,0 +1,114 @@
+/* Goal in CSS is the separation of concerns */
+/* https://www.google.com/search?q=so+then+all+things+considered+would+you+use+index.css+for+default+css+and+app.css+for+when+specific+components+are+called+and+then+components.css+to+customize+those+renderings&rlz=1C1VDKB_enUS1201US1201&oq=so+then+all+things+considered+would+you+use+index.css+for+default+css+and+app.css+for+when+specific+components+are+called+and+then+components.css+to+customize+those+renderings&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTQxMjgwajBqN6gCCLACAfEFG8me27vWvPA&sourceid=chrome&ie=UTF-8 */
+
+/* Summary of Your Proposed Structure vs. Best Practices
+Your Proposed File 	Recommended Use (Aligned)	Best Practices
+index.css	Global/Default CSS	Contains base, reset, and layout styles imported once at the root.
+app.css	Component-Specific CSS	Better named after the specific component (e.g., App.css is for the App component). Place component styles with the component itself.
+components.css	Customization/Theming	Grouping all components in one large file can become unmanageable as the project grows. Separate files per component are preferred for scalability and maintenance.
+Key Takeaway: Consistency is more important than the exact file names. Pick a structure (like SMACSS or BEM) and stick to it, documenting your conventions for team collaboration. For larger projects, consider using CSS Modules or CSS-in-JS solutions to automatically scope styles and avoid conflicts. 
+Stack Overflow
+Stack Overflow
+ +4
+index.css vs. App.css in default app created by "create-react ...
+Jun 11, 2017 — * 1 Answer. Sorted by: 49. The App component is essentially the top most component in a React-based application, from whom all oth...
+
+Stack Overflow
+
+What are the best practices for organizing and structuring CSS files ...
+Sep 26, 2023 — Here are some best practices for organizing and structuring CSS files in a large web project: * Modularization: * Component-Based:
+
+MindStick
+
+Organizing your CSS - Learn web development | MDN
+Nov 7, 2025 — Here are some general suggestions for ways to keep your stylesheets organized and tidy. * Does your project have a coding style gu...
+
+MDN Web Docs
+ */
+
+
+
+:root {
+  
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+ 
+  padding: 40px;
+  background: black;
+  color: white;
+  height: 100vh;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  height: 50px;
+  width: 150px;
+  margin-top: 30px;
+  
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+h1 {
+   font-family:  serif;
+   font-size: 50px;
+}
+
+
+
+select {
+  
+  height: 40px;
+  width: 40px;
+}
+
+
+
+.user-input-flex {
+  display: flex;
+  flex-direction: row; /* Stacks items vertically */
+  height: 100px;
+  
+}
+
+.user-input-div {
+  margin-top: 28px;
+  margin-right: 15px;
+}
+
+.user-input input {
+  display: block;
+  margin-top: 5px; /* Adds space between form fields */
+  width: 180px;
+}
