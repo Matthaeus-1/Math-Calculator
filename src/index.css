@@ -46,10 +46,11 @@ MDN Web Docs
 
 body {
  
-  padding: 40px;
+  padding: 80px;
   background: black;
   color: white;
-  height: 100vh;
+  height: 120vh;
+ 
 }
 
 a:hover {
@@ -83,12 +84,14 @@ button:focus-visible {
 
 div {
   margin-top: 40px;
+
 }
 
 h1 {
    font-family:  serif;
    font-size: 50px;
 }
+
 
 
 
