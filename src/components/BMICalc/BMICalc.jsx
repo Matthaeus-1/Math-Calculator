@@ -111,23 +111,23 @@ export const BMICalc = () => {
         <div>
             <div>
                 <h2>
-                    Your BMI Result Calculated by Your Current Weight and Height Entered: {result_BMI}
+                    Your BMI Result Calculated by Your Current Weight in Pounds and Height in Inches Entered: {result_BMI}
                 </h2>
             </div>
 
             <div>
                 <h2>
-                    Target Weight and Weight Loss Required to Achieve Target BMI Based Upon Current Weight and Height
+                    Target Weight in Pounds and Weight Loss in Pounds Required to Achieve Target BMI Based Upon Current Weight in Pounds and Height in Inches Entered:
                 </h2>
                 
                 <p>
-                    Your BMI Result Calculated by Your Current Weight and Height Entered: {result_BMI2}
+                    Your BMI Result Calculated by Your Current Weight in Pounds and Height in Inches Entered: {result_BMI2}
                 </p>
                 <p>
-                    Target Weight Result to Achieve the Target BMI Based Upon Your Current Height: {result_Target_Weight}
+                    Target Minimum Weight in Pounds Needed to Achieve the Target BMI Based Upon Your Current Height in Inches Entered: {result_Target_Weight}
                 </p>
                 <p>
-                    Target Weight Loss Needed to Achieve the Target BMI Based Upon Your Current Weight in Pounds: {weight_pounds - (result_Target_Weight)}
+                    Target Weight Loss in Pounds Needed to Achieve the Target BMI Based Upon Your Current Weight in Pounds Entered: {weight_pounds - (result_Target_Weight)}
                 </p>
             </div>
 
