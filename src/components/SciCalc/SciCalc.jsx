@@ -65,8 +65,8 @@ export const SciCalc = () => {
       <h1>Scientific Notation Calculator</h1>
       <p className='instructions'>Enter a numerical value in the fields below:  Example: 4.2e6; 4e-4; 3<br />Number 3 has a default value of 1 should you only need to multiply or divide 2 values.</p>
       <select value={operation} onChange={(e) => setOperation(e.target.value)}>
-          <option value="multiply">×</option>
-          <option value="divide">÷</option>
+          <option value="multiply">Multiply</option>
+          <option value="divide">Divide</option>
       </select>
        <br />
 
