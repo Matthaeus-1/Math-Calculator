@@ -111,7 +111,7 @@ export const BMICalc = () => {
         <div>
             <div>
                 <h2>
-                    Your BMI Result Calculated by Your Current Weight in Pounds and Height in Inches Entered: {result_BMI}
+                    BMI Result Calculated by Your Current Weight in Pounds and Height in Inches Entered: {result_BMI}
                 </h2>
             </div>
 
