@@ -13,7 +13,7 @@ import '../../index.css';
 
 
 export const BMICalc = () => {
-/* set const to weight_pounds, height_inches, proportional constant of 703 */
+/* set const to weight_pounds, height_inches */
     const [weight_pounds, setWeight] = useState(200);
     const [height_inches, setHeight] = useState(61);
     const [operation, setOperation] = useState('BMI_Calculator');
@@ -38,6 +38,7 @@ export const BMICalc = () => {
     let calculationResult3;
     if (operation === 'BMI') {
 
+      // proportional constant of 703 is used to convert the BMI formula to use weight in pounds and height in inches instead of weight in kilograms and height in meters.
       calculationResult = 703 * weight_lb / height_in**2;
 
       /*  https://www.google.com/search?q=i+have+a+react+component+with+three+input+text+boxes+and+a+button+that+runs+a+script+from+the+values+in+the+input+boxes+--+id+like+one+of+the+input+boxes+to+clear+when+i+click+the+calculate+button&sca_esv=2fd5b39ab3b9e7c8&biw=786&bih=556&sxsrf=ANbL-n6L_1Jkgbop0R-UgrJaxJYc-B4kqg%3A1779781878987&ei=9lAVap36O9XakPIPqcax8As&ved=0ahUKEwidzbKVvNaUAxVVLUQIHSljDL4Q4dUDCBA&uact=5&oq=i+have+a+react+component+with+three+input+text+boxes+and+a+button+that+runs+a+script+from+the+values+in+the+input+boxes+--+id+like+one+of+the+input+boxes+to+clear+when+i+click+the+calculate+button&gs_lp=Egxnd3Mtd2l6LXNlcnAixAFpIGhhdmUgYSByZWFjdCBjb21wb25lbnQgd2l0aCB0aHJlZSBpbnB1dCB0ZXh0IGJveGVzIGFuZCBhIGJ1dHRvbiB0aGF0IHJ1bnMgYSBzY3JpcHQgZnJvbSB0aGUgdmFsdWVzIGluIHRoZSBpbnB1dCBib3hlcyAtLSBpZCBsaWtlIG9uZSBvZiB0aGUgaW5wdXQgYm94ZXMgdG8gY2xlYXIgd2hlbiBpIGNsaWNrIHRoZSBjYWxjdWxhdGUgYnV0dG9uMgUQIRigATIFECEYqwIyBRAhGKsCMgUQIRifBTIFECEYnwVI5dUCUJQQWKvUAnACeAGQAQCYAX2gAaolqgEFMjYuMjS4AQPIAQD4AQGYAjOgAsMlqAIKwgIHECMY6gIYJ8ICBBAjGCfCAgsQABiABBiKBRiRAsICCxAAGIAEGLEDGIMBwgILEC4YgAQYsQMYgwHCAggQABiABBixA8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEC4YgwEYsQMYgATCAgoQLhiABBiKBRhDwgIKEAAYgAQYigUYQ8ICDRAAGIAEGIoFGEMYsQPCAg4QABiABBiKBRixAxiDAcICBRAAGIAEwgIKEAAYgAQYFBiHAsICDRAuGIAEGMcBGNEDGArCAg4QLhiABBjHARivARiOBcICCBAuGIAEGLEDwgIQEC4YgAQYsQMYxwEY0QMYCsICBRAuGIAEwgIIEC4YsQMYgATCAgsQABiABBiKBRixA8ICBhAAGBYYHsICCxAAGIAEGIoFGIYDwgIFEAAY7wXCAgcQABiABBgNwgIIEAAYCBgeGA3CAgcQIRgKGKABmAMG8QU00zW2YGkQOZIHBTI0LjI3oAe32wOyBwUyMi4yN7gHuiXCBwY1LjQyLjTIB1mACAE&sclient=gws-wiz-serp */
@@ -52,8 +53,8 @@ export const BMICalc = () => {
 
    
     setResultBMI(calculationResult);
-    setResultBMI2(calculationResult3);
     setResultTargetWeight(calculationResult2);
+    setResultBMI2(calculationResult3);
   };
 
 
